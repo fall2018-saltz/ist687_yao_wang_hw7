@@ -53,6 +53,16 @@
             ],
             "source": "HW7.R",
             "target": "map.MurderColor.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.PointColor",
+                    "type": "png"
+                }
+            ],
+            "source": "HW7.R",
+            "target": "map.PointColor.png"
         }
     ],
     "nodes": [
@@ -87,6 +97,6 @@
             "name": "map.PointColor.png"
         }
     ],
-    "updated_at": "2018-10-17 20:59:14",
+    "updated_at": "2018-10-17 20:59:22",
     "url": "https://github.com/fall2018-saltz/ist687_yao_wang_hw7"
 }
