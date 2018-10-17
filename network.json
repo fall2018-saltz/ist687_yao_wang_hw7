@@ -95,8 +95,11 @@
         },
         {
             "name": "map.PointColor.png"
+        },
+        {
+            "name": "map.ZoomPointColor.png"
         }
     ],
-    "updated_at": "2018-10-17 20:59:22",
+    "updated_at": "2018-10-17 21:02:17",
     "url": "https://github.com/fall2018-saltz/ist687_yao_wang_hw7"
 }
