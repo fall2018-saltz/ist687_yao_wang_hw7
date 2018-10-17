@@ -14,11 +14,12 @@ readStates <- function()
   # Read form from outside of R. Create a new dataframe "dfStates", then reserve the form into "dfStates"
   # remover rows that not needed 
   dfStates <- dfStates[2:52, 5:8] #select only rows and columns of interest
+  # rename the columns
   colnames(dfStates) <- c("stateName", "population","popOver18", "percentOver18") # rename the columns
   return(dfStates)
 }
 
-states <- readStates()  
+dfstates <- readStates()  
 str(states)
 # 2. re-use the code from HW2
 arrests <- USArrests 
