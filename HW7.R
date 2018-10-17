@@ -75,8 +75,9 @@ map.PopColor <- map.Color+ geom_map(map = us, aes(fill=population))
 map.PopColor <- map.PopColor + expand_limits(x = us$long, y = us$lat)
 map.PopColor <- map.PopColor+ coord_map() + ggtitle("Population of Each State")
 # add population points with size on the map
-map.PointColor <- map.PopColor + geom_point(data=dfMerged
+map.PointColor <- map.MurderColor + geom_point(data=dfMerged
                         ,aes(x=x, y=y, size=population), color= "tomato1")+ggtitle("Population of Each State")
+
 map.PointColor
 
 # Step D: Zoom the map
