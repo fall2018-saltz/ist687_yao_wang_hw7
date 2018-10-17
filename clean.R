@@ -10,7 +10,7 @@
 # re-use the code from HW3
 readStates <- function()
 {
-  states <- raw_data
+  dfStates <- raw_data
   # Read form from outside of R. Create a new dataframe "dfStates", then reserve the form into "dfStates"
   # remover rows that not needed 
   dfStates <- dfStates[2:52, 5:8] #select only rows and columns of interest
