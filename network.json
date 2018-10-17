@@ -1,0 +1,115 @@
+{
+    "collaborators": [
+        "ywang"
+    ],
+    "created_at": "2018-10-17 20:25:13",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "raw_data.csv",
+            "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "clean_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean.R",
+            "target": "data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "scprc_est_2017_18_pop_res.csv",
+            "target": "HW7.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.areaColor",
+                    "type": "png"
+                }
+            ],
+            "source": "HW7.R",
+            "target": "map.areaColor.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.MurderColor",
+                    "type": "png"
+                }
+            ],
+            "source": "HW7.R",
+            "target": "map.MurderColor.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.PointColor",
+                    "type": "png"
+                }
+            ],
+            "source": "HW7.R",
+            "target": "map.PointColor.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.ZoomPointColor",
+                    "type": "png"
+                }
+            ],
+            "source": "HW7.R",
+            "target": "map.ZoomPointColor.png"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "raw_data.csv"
+        },
+        {
+            "name": "data.csv"
+        },
+        {
+            "name": "scprc_est_2017_18_pop_res.csv"
+        },
+        {
+            "assigned_to": "ywang",
+            "desc": "",
+            "name": "HW7.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "ywang",
+            "desc": "",
+            "name": "clean.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "map.areaColor.png"
+        },
+        {
+            "name": "map.MurderColor.png"
+        },
+        {
+            "name": "map.PointColor.png"
+        },
+        {
+            "name": "map.ZoomPointColor.png"
+        }
+    ],
+    "updated_at": "2018-10-17 21:02:25",
+    "url": "https://github.com/fall2018-saltz/ist687_yao_wang_hw7"
+}
