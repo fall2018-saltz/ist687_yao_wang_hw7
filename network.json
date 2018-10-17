@@ -23,6 +23,11 @@
             ],
             "source": "clean.R",
             "target": "data.csv"
+        },
+        {
+            "ports": [],
+            "source": "scprc_est_2017_18_pop_res.csv",
+            "target": "HW7.R"
         }
     ],
     "nodes": [
@@ -45,6 +50,6 @@
             "name": "HW7.R"
         }
     ],
-    "updated_at": "2018-10-17 20:45:00",
+    "updated_at": "2018-10-17 20:45:16",
     "url": "https://github.com/fall2018-saltz/ist687_yao_wang_hw7"
 }
