@@ -1,0 +1,41 @@
+{
+    "collaborators": [
+        "ywang"
+    ],
+    "created_at": "2018-10-17 20:25:13",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "raw_data.csv",
+            "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "clean_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean.R",
+            "target": "data.csv"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "raw_data.csv"
+        },
+        {
+            "name": "clean.R"
+        },
+        {
+            "name": "data.csv"
+        }
+    ],
+    "updated_at": "2018-10-17 20:25:13",
+    "url": "https://github.com/fall2018-saltz/ist687_yao_wang_hw7"
+}
