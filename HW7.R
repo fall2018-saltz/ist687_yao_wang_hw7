@@ -50,7 +50,6 @@ library(maps)
 dfMerged$stateName <- tolower(dfMerged$stateName)
 # draw ggplot area color map
 us <- map_data("state")
-View(us)
 map.Color <- ggplot(dfMerged, aes(map_id = stateName))
 map.areaColor <- map.Color+ geom_map(map = us, aes(fill=state.area))
 map.areaColor <- map.areaColor + expand_limits(x = us$long, y = us$lat)
