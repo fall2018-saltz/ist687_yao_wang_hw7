@@ -63,6 +63,16 @@
             ],
             "source": "HW7.R",
             "target": "map.PointColor.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.ZoomPointColor",
+                    "type": "png"
+                }
+            ],
+            "source": "HW7.R",
+            "target": "map.ZoomPointColor.png"
         }
     ],
     "nodes": [
@@ -100,6 +110,6 @@
             "name": "map.ZoomPointColor.png"
         }
     ],
-    "updated_at": "2018-10-17 21:02:17",
+    "updated_at": "2018-10-17 21:02:25",
     "url": "https://github.com/fall2018-saltz/ist687_yao_wang_hw7"
 }
