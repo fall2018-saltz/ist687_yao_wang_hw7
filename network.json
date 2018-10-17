@@ -35,11 +35,6 @@
             "name": "raw_data.csv"
         },
         {
-            "assigned_to": "ywang",
-            "name": "clean.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "data.csv"
         },
         {
@@ -48,8 +43,14 @@
         {
             "desc": "",
             "name": "HW7.R"
+        },
+        {
+            "assigned_to": "ywang",
+            "desc": "",
+            "name": "clean.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-17 20:45:16",
+    "updated_at": "2018-10-17 20:45:58",
     "url": "https://github.com/fall2018-saltz/ist687_yao_wang_hw7"
 }
