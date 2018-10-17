@@ -25,7 +25,12 @@
             "target": "data.csv"
         },
         {
-            "ports": [],
+            "ports": [
+                {
+                    "input": "scprc_est_2017_18_pop_res",
+                    "type": "csv"
+                }
+            ],
             "source": "scprc_est_2017_18_pop_res.csv",
             "target": "HW7.R"
         }
@@ -41,8 +46,10 @@
             "name": "scprc_est_2017_18_pop_res.csv"
         },
         {
+            "assigned_to": "ywang",
             "desc": "",
-            "name": "HW7.R"
+            "name": "HW7.R",
+            "task_status": "in progress"
         },
         {
             "assigned_to": "ywang",
@@ -51,6 +58,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-17 20:45:58",
+    "updated_at": "2018-10-17 20:51:14",
     "url": "https://github.com/fall2018-saltz/ist687_yao_wang_hw7"
 }
