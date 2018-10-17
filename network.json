@@ -39,8 +39,12 @@
         },
         {
             "name": "scprc_est_2017_18_pop_res.csv"
+        },
+        {
+            "desc": "",
+            "name": "HW7.R"
         }
     ],
-    "updated_at": "2018-10-17 20:44:46",
+    "updated_at": "2018-10-17 20:45:00",
     "url": "https://github.com/fall2018-saltz/ist687_yao_wang_hw7"
 }
