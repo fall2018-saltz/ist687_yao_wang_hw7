@@ -69,8 +69,11 @@
         },
         {
             "name": "map.areaColor.png"
+        },
+        {
+            "name": "map.MurderColor.png"
         }
     ],
-    "updated_at": "2018-10-17 20:54:40",
+    "updated_at": "2018-10-17 20:58:06",
     "url": "https://github.com/fall2018-saltz/ist687_yao_wang_hw7"
 }
