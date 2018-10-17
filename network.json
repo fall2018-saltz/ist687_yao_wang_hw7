@@ -27,7 +27,7 @@
         {
             "ports": [
                 {
-                    "input": "scprc_est_2017_18_pop_res",
+                    "input": "raw_data",
                     "type": "csv"
                 }
             ],
@@ -58,6 +58,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-17 20:51:14",
+    "updated_at": "2018-10-17 20:52:14",
     "url": "https://github.com/fall2018-saltz/ist687_yao_wang_hw7"
 }
