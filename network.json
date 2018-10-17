@@ -33,6 +33,16 @@
             ],
             "source": "scprc_est_2017_18_pop_res.csv",
             "target": "HW7.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.areaColor",
+                    "type": "png"
+                }
+            ],
+            "source": "HW7.R",
+            "target": "map.areaColor.png"
         }
     ],
     "nodes": [
@@ -61,6 +71,6 @@
             "name": "map.areaColor.png"
         }
     ],
-    "updated_at": "2018-10-17 20:54:10",
+    "updated_at": "2018-10-17 20:54:40",
     "url": "https://github.com/fall2018-saltz/ist687_yao_wang_hw7"
 }
