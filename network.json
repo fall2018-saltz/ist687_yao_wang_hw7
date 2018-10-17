@@ -56,8 +56,11 @@
             "desc": "",
             "name": "clean.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "map.areaColor.png"
         }
     ],
-    "updated_at": "2018-10-17 20:52:14",
+    "updated_at": "2018-10-17 20:54:10",
     "url": "https://github.com/fall2018-saltz/ist687_yao_wang_hw7"
 }
