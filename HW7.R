@@ -42,12 +42,13 @@ dfMerged <- merge(dfMerged, dfNAC, by = "stateName")
 
 # Step B: Generate a color coded map
 # 3.Create a color coded map, based on the area of the state 
-
 library(ggplot2)
 library(ggmap)
 library(mapproj)
 library(maps)
+# make sure every word is lower case.
 dfMerged$stateName <- tolower(dfMerged$stateName)
+# draw ggplot area color map
 map.Color <- ggplot(dfMerged, aes(map_id = stateName))
 map.areaColor <- map.Color+ geom_map(map = us, aes(fill=state.area))
 map.areaColor <- map.areaColor + expand_limits(x = us$long, y = us$lat)
@@ -56,7 +57,10 @@ map.areaColor
 # Step C: Create a color shaded map of the U.S. based on the Murder rate for each state 
 # 4. Repeat step B, but color code the map based on the murder rate of each state.
 us <- map_data("state")
+View(us)
+# make sure every word is lower case.
 dfMerged$stateName <- tolower(dfMerged$stateName)
+# draw ggplot murder color map
 map.Color <- ggplot(dfMerged, aes(map_id = stateName))
 map.MurderColor <- map.Color+ geom_map(map = us, aes(fill=Murder))
 map.MurderColor <- map.MurderColor + expand_limits(x = us$long, y = us$lat)
@@ -70,7 +74,7 @@ map.Color <- ggplot(dfMerged, aes(map_id = stateName))
 map.PopColor <- map.Color+ geom_map(map = us, aes(fill=population))
 map.PopColor <- map.PopColor + expand_limits(x = us$long, y = us$lat)
 map.PopColor <- map.PopColor+ coord_map() + ggtitle("Population of Each State")
-
+# add population points with size on the map
 map.PointColor <- map.PopColor + geom_point(data=dfMerged
                         ,aes(x=x, y=y, size=population), color= "tomato1")+ggtitle("Population of Each State")
 map.PointColor
@@ -80,3 +84,4 @@ map.PointColor
 Location <- geocode(source="dsk", "NYC, ny")
 map.ZoomPointColor <- map.PointColor + xlim(Location$lon-10, Location$lon+10)+ylim(Location$lat-10, Location$lat+10)+coord_map()
 map.ZoomPointColor
+
