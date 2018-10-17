@@ -30,12 +30,17 @@
             "name": "raw_data.csv"
         },
         {
-            "name": "clean.R"
+            "assigned_to": "ywang",
+            "name": "clean.R",
+            "task_status": "in progress"
         },
         {
             "name": "data.csv"
+        },
+        {
+            "name": "scprc_est_2017_18_pop_res.csv"
         }
     ],
-    "updated_at": "2018-10-17 20:25:13",
+    "updated_at": "2018-10-17 20:44:46",
     "url": "https://github.com/fall2018-saltz/ist687_yao_wang_hw7"
 }
