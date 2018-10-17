@@ -19,8 +19,8 @@ readStates <- function()
   return(dfStates)
 }
 
-dfstates <- readStates()  
-str(states)
+dfStates <- readStates()  
+str(dfStates)
 # 2. re-use the code from HW2
 arrests <- USArrests 
 str(arrests)
