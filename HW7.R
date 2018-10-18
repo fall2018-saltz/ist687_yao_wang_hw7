@@ -49,6 +49,7 @@ library(maps)
 # make sure every word is lower case.
 dfMerged$stateName <- tolower(dfMerged$stateName)
 # draw ggplot area color map
+us <- map_data("state")
 map.Color <- ggplot(dfMerged, aes(map_id = stateName))
 map.areaColor <- map.Color+ geom_map(map = us, aes(fill=state.area))
 map.areaColor <- map.areaColor + expand_limits(x = us$long, y = us$lat)
@@ -56,8 +57,6 @@ map.areaColor <- map.areaColor+ coord_map() + ggtitle("Murder Rate of Each State
 map.areaColor
 # Step C: Create a color shaded map of the U.S. based on the Murder rate for each state 
 # 4. Repeat step B, but color code the map based on the murder rate of each state.
-us <- map_data("state")
-View(us)
 # make sure every word is lower case.
 dfMerged$stateName <- tolower(dfMerged$stateName)
 # draw ggplot murder color map
